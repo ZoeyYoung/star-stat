@@ -1,0 +1,93 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="./assets/nvd3.css" rel="stylesheet" type="text/css">
+  <style>
+    text {
+      font: 12px sans-serif;
+    }
+
+    svg {
+      display: block;
+    }
+
+    #chart,
+    svg {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin: auto;
+      padding-right: 20pt;
+      max-width: 800px;
+      height: 80%;
+    }
+
+    body {
+      margin: auto;
+      font-size: 1rem;
+    }
+
+    .nav {
+      text-transform: uppercase;
+      text-align: center;
+      background-color: #30A06E;
+      color: white;
+      padding: 2pt;
+      margin: 0;
+    }
+
+    input {
+      max-width: 300px;
+      height: 30px;
+      font-size: 1rem;
+      margin:4pt;
+    }
+
+    button {
+      text-align: center;
+      font-size: 1rem;
+      background-color: #01A94C;
+      color: white;
+      border-radius: 24px;
+      padding: 6px 10px;
+    }
+
+    #theForm {
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+    }
+
+    footer {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    #clearBtn {
+      float: right;
+      background-color: #9b0000;
+    }
+  </style>
+  <title>Star history</title>
+
+</head>
+
+<body>
+  <div class="nav">
+      <form id="theForm">
+        <input type="text" id="repo" name="repo" placeholder="eg: torvalds/linux">
+        <button type="submit" id="theBtn" >See star history</button>
+      </form>
+      <img src="./assets/loadinfo.net.gif" alt="Loading..." id="theGif" style="visibility:hidden;">
+  </div>
+
+  <div id="chart">
+    <svg></svg>
+  </div>
+
+  <footer>
+    <button id="clearBtn" >clear</button>
+  </footer>
+
+  <script type="text/javascript" src="./dist/bundle.js" charset="utf-8"></script>
+</body>

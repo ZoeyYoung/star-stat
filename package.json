@@ -1,0 +1,31 @@
+{
+  "name": "star_history",
+  "version": "1.0.0",
+  "description": "The missing star history graph of github projects",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack -d --watch",
+    "build": "webpack -p"
+  },
+  "keywords": [
+    "github",
+    "star",
+    "history"
+  ],
+  "author": "timqian",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.9.1",
+    "corner-notie": "^1.2.0",
+    "d3": "^3.5.6",
+    "nvd3": "^1.8.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.5.2",
+    "babel-loader": "^6.2.3",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-plugin-transform-runtime": "^6.9.0",
+    "webpack": "^1.12.14"
+  }
+}
