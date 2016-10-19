@@ -3143,7 +3143,8 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// https://github.com/blog/1509-personal-api-tokens
-	var ACCESS_TOKEN = ['ec9d935ba6dc8eb87a7d1606b9000e5c0214dae3', '084b9190ea46f50bb9f09cb2767aac2176a0513f', '465a8308f2ca521de46ff121b7d38e8dc29bc96a', 'bc80246a43782ccd5a65bb65fc0081446f6af93c'];
+	// 怎么生成？
+	var ACCESS_TOKEN = ['ee3a172df9aaa8c858b5585ca53391cec47b20c0', 'da9f64e669b91d89f5abe19b313ab07a54b7c974', '31eee536d05b169b3e184e152d18775f7166123b', '9da45c0ed04c77c47278bb260d7c6b6c2c9b9fa8', 'd96ed1e68bec80e725db8f23327a96839def67a6', '569e1881d1b810c39e35c650f056ea6fac05a400'];
 	
 	// https://developer.github.com/v3/activity/starring/#list-stargazers
 	var axiosGit = _axios2.default.create({
