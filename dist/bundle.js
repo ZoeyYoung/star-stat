@@ -68,10 +68,9 @@
 	      while (1) {
 	        switch (_context3.prev = _context3.next) {
 	          case 0:
-	            document.getElementById('theBtn').setAttribute("disabled", "disabled");
 	            document.getElementById('theGif').style.visibility = 'visible';
 	
-	            _context3.next = 4;
+	            _context3.next = 3;
 	            return (0, _getStarHistory2.default)(repo).catch(function (err) {
 	              (0, _cornerNotie2.default)(err, {
 	                type: 'warning', // info | warning | success | danger
@@ -80,11 +79,10 @@
 	                position: 'bottom-center',
 	                width: 270
 	              });
-	              document.getElementById('theBtn').removeAttribute("disabled");
 	              document.getElementById('theGif').style.visibility = 'hidden';
 	            });
 	
-	          case 4:
+	          case 3:
 	            starHistory = _context3.sent;
 	
 	            if (starHistory) {
@@ -100,10 +98,9 @@
 	              });
 	              (0, _draw2.default)(data);
 	            }
-	            document.getElementById('theBtn').removeAttribute("disabled");
 	            document.getElementById('theGif').style.visibility = 'hidden';
 	
-	          case 8:
+	          case 6:
 	          case 'end':
 	            return _context3.stop();
 	        }

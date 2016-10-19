@@ -40,7 +40,9 @@
       max-width: 300px;
       height: 30px;
       font-size: 1rem;
-      margin:4pt;
+      margin: 6px;
+      padding: 0 6px;
+      border: none;
     }
 
     button {
@@ -49,6 +51,7 @@
       background-color: #01A94C;
       color: white;
       border-radius: 24px;
+      border: none;
       padding: 6px 10px;
     }
 
@@ -56,6 +59,11 @@
       display: inline-block;
       padding: 0;
       margin: 0;
+    }
+
+    #theGif {
+      display: inline-block;
+      vertical-align: middle;
     }
 
     footer {
@@ -68,17 +76,15 @@
       background-color: #9b0000;
     }
   </style>
-  <title>Star history</title>
-
+  <title>Star stat</title>
 </head>
 
 <body>
   <div class="nav">
-      <form id="theForm">
-        <input type="text" id="repo" name="repo" placeholder="eg: torvalds/linux">
-        <button type="submit" id="theBtn" >See star history</button>
-      </form>
+    <form id="theForm">
+      <input type="text" id="repo" name="repo" placeholder="eg: torvalds/linux">
       <img src="./assets/loadinfo.net.gif" alt="Loading..." id="theGif" style="visibility:hidden;">
+    </form>
   </div>
 
   <div id="chart">

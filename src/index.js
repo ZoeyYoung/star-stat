@@ -42,7 +42,6 @@ document.getElementById('clearBtn').addEventListener('click', () => {
 })
 
 async function fetchDataAndDraw(repo) {
-  document.getElementById('theBtn').setAttribute("disabled", "disabled");
   document.getElementById('theGif').style.visibility = 'visible';
 
   const starHistory = await getStarHistory(repo).catch(err => {
@@ -53,7 +52,6 @@ async function fetchDataAndDraw(repo) {
       position: 'bottom-center',
       width: 270
     });
-    document.getElementById('theBtn').removeAttribute("disabled");
     document.getElementById('theGif').style.visibility = 'hidden';
   });
   if (starHistory) {
@@ -69,6 +67,5 @@ async function fetchDataAndDraw(repo) {
     });
     draw(data)
   }
-  document.getElementById('theBtn').removeAttribute("disabled");
   document.getElementById('theGif').style.visibility = 'hidden';
 }
