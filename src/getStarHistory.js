@@ -2,7 +2,10 @@ import axios from 'axios';
 
 // https://github.com/blog/1509-personal-api-tokens
 const ACCESS_TOKEN = [
-  'aabe909076339bf96d26e2e73cc5408dcc5ca2cb'
+  'ec9d935ba6dc8eb87a7d1606b9000e5c0214dae3',
+  '084b9190ea46f50bb9f09cb2767aac2176a0513f',
+  '465a8308f2ca521de46ff121b7d38e8dc29bc96a',
+  'bc80246a43782ccd5a65bb65fc0081446f6af93c'
 ];
 
 // https://developer.github.com/v3/activity/starring/#list-stargazers
